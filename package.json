@@ -40,5 +40,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.2.3",
     "typescript": "^5"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"]
   }
 }

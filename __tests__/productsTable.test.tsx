@@ -1,8 +1,11 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import ProductsTable from "@/pages/products";
-import { fetchProducts, fetchProductReviewsById } from "@/service";
-import { Product } from "@/types/types";
+
 import "@testing-library/jest-dom";
+import { Product } from "../src/types/types";
+import ProductsTable from "../src/pages/products";
+import React from "react";
+import { fetchProducts, fetchProductReviewsById } from "@/service";
+
 
 // Mock the API calls
 jest.mock("@/service", () => ({

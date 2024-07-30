@@ -1,8 +1,9 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import LoginPage from "@/pages/login";
-import { login } from "@/service";
 import { useRouter } from "next/router";
+import LoginPage from "../src/pages/login";
+import { login } from "../src/service";
+import React from "react";
 
 // Mock the login function
 jest.mock('@/service', () => ({
